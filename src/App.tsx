@@ -2,6 +2,7 @@ import React from 'react'
 import Basic01 from './components/basic01'
 import Basic02 from './components/basic02'
 import Basic03 from './components/basic03'
+import Basic04 from './components/basic04'
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'
 import './App.css'
 
@@ -20,6 +21,9 @@ function App() {
             <li>
               <Link to={'/basic03'}>Basic03</Link>
             </li>
+            <li>
+              <Link to={'/basic04'}>Basic04</Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -32,6 +36,9 @@ function App() {
         </Route>
         <Route path={'/basic03'}>
           <Basic03 />
+        </Route>
+        <Route path={'/basic04'}>
+          <Basic04 />
         </Route>
       </Switch>
     </Router>
